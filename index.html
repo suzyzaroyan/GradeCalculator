@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1 id="header"> Negotiations EC260 </h1>
+
+    <div id="studentinfo">
+      <h3>Suzanna Zaroyan</h3>
+    </div>
+
+    <table id="studentGrades">
+      <tr>
+        <th>Method of Evaluation</th>
+        <th>Weight</th>
+        <th>Grade</th>
+      </tr> 
+      <tr>
+        <td>Homework</td>
+        <td id="homework-percent">25%</td>
+        <td><input type="text" id="hwGrade"></td>
+      </tr>
+      <tr>
+        <td>Participation</td>
+        <td id="participation-percent">15%</td>
+        <td><input type="text" id="participation-grade"></td>
+      </tr>
+      <tr>
+        <td>Quiz</td>
+        <td id="quiz-percent">30%</td>
+        <td><input type="text" id="quiz-grade"></td>
+      </tr>
+      <tr>
+        <td>Final project</td>
+        <td id="finalproject-percent">30%</td>
+        <td><input type="text" id="finalproject-grade"></td>
+      </tr>
+    </table>
+    <div>
+      <button onclick="calculateGrade()"
+      id="currentGradeButton">Calculate
+      </button>
+    </div>
+    <div id="currentGrade">
+      <label>Current Grade: </label>
+      <span id="currentGradeVAL"></span>
+    </div>
+
+  </body>
+
+</html>
