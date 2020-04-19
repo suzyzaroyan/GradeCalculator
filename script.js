@@ -1,3 +1,17 @@
+function checkGrade(evt) {
+  var grade =parseFloat(evt.currentTarget.value);
+
+  if (grade > 100 || grade < 0) {
+    console.log("Wrong value")
+    evt.currentTarget.style.color = "red"
+  } else {
+    console.log("Correct Value")
+    evt.currentTarget.style.color = "black"
+
+  }
+
+}
+
 function calculateGrade() {
 
   var homework_percent = parseInt(document.getElementById ("homework-percent").innerHTML)
