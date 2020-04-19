@@ -1,4 +1,5 @@
-
+tr input:hover {
+ cursor: pointer;
  }
 
 #header {
